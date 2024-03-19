@@ -28,9 +28,8 @@ long long int bellNumber(int natural){
 }
 int main() {
     long double sum, part_sum, k;
-    cin >> k;
-    sum = 0;
-    for (int n = 1;; n++) {
+    part_sum, sum = 0;
+    for (int n = 1; ;n++){
         part_sum = pow(n, k) / factorial(n);
         if (abs(part_sum) < eps){
             break;
